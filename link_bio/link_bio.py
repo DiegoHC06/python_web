@@ -24,7 +24,7 @@ def index() -> rx.Component:
          footer()
     )
 # Add state and page to the app.
-app = rx.App(
+app = rx.App( 
     style=styles.BASE_STYLE
 )
 app.add_page(index)
