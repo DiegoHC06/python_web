@@ -8,5 +8,9 @@ LINKEDIN_URL = "https://www.linkedin.com/feed/"
 #COMUNIDAD
 TWITCH_URL = "https://www.twitch.tv/diegohc06"
 
-#PaginaWEb
+#Recursos  y mas
 PAGE_URL = "https://diegohuh.000webhostapp.com/"
+
+#Contactos
+
+EMAIL= "diegohuhcob@outlook.com"

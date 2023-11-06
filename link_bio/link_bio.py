@@ -18,14 +18,17 @@ def index() -> rx.Component:
                 links(),
                 max_width = styles.MAX_WIDTH,
                 width= "100%",
-                margin_y = Size.BIG.value, 
+                margin_y = Size.BIG.value,
+                padding=Size.BIG.value 
             )
+            
         ),
          footer()
     )
 # Add state and page to the app.
 app = rx.App( 
-    style=styles.BASE_STYLE
+    style=styles.BASE_STYLE,
+    stylesheets= styles.STYLESHEETS
 )
 app.add_page(index)
 app.compile()

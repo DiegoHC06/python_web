@@ -7,15 +7,13 @@ def navbar() -> rx.Component:
         rx.box(
             rx.span("diego", color=Color.PRIMARY.value),
             rx.span("dev", color=Color.SECONDARY.value),
-            style=styles.navbar_title_style,
-            
-           
+            style=styles.navbar_title_style
             
         ),
         position = "sticky",
         bg = Color.CONTENT.value,
-        padding_x = Size.DEFAULT.value,
-        padding_y =Size.SMALL.value,
+        padding_x = Size.BIG.value,
+        padding_y =Size.DEFAULT.value,
         z_index = "999",
         top = "0"
     )

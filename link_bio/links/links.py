@@ -10,12 +10,12 @@ def links() -> rx.Component:
 
         link_button(
             "Twitch",
-            "Directos de lunes a vienes",
+            "Directos de lunes a vienes.",
             const.TWITCH_URL
         ),
         link_button(
             "Youtube",
-            "Tutoriales .",
+            "Tutoriales.",
             const.YOUTUBE_URL
         ),
         link_button(
@@ -27,6 +27,37 @@ def links() -> rx.Component:
             "X",
             "Sigueme para charlar.",
              const.TWITTER_X_URL
+        ),
+
+        title("Recursos y más"),
+
+        link_button(
+            "Pagina web",
+            "Mi sitio WEB",
+            const.PAGE_URL
+        ),
+        link_button(
+            "Youtube",
+            "Tutoriales.",
+            const.YOUTUBE_URL
+        ),
+        link_button(
+            "LinkEdin",
+            "Da el siguiente paso en tu carrera profesional y mejora tu futuro laboral hoy mismo.",
+            const.LINKEDIN_URL
+        ),
+        link_button(
+            "X",
+            "Sigueme para charlar.",
+             const.TWITTER_X_URL
+        ),
+
+        title("Contacto"),
+
+        link_button(
+            "Email",
+            const.EMAIL,
+            f"mailto:{const.EMAIL}",
         ),
         spacing=Size.MEDIUM.value, 
         width="100%"
