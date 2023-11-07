@@ -28,7 +28,7 @@ def links() -> rx.Component:
         ),
         link_button(
             "X",
-            "Sigueme para charlar.",
+            "Sígueme para charlar.",
             "icons/twitch.svg",
             const.TWITTER_X_URL
         ),
@@ -36,7 +36,7 @@ def links() -> rx.Component:
         title("Recursos y más"),
 
         link_button(
-            "Pagina web",
+            "Página web",
             "Mi sitio WEB",
             "icons/twitch.svg",
             const.PAGE_URL

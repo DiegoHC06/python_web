@@ -7,14 +7,17 @@ from link_bio.styles.colors import TextColor as TextColor
 def footer() -> rx.Component:
     return rx.vstack(
         rx.image(    
-            src="favicon.ico"),
+            src="favaicon.png", width = Size.LARGE.value),
         rx.link(
-               f"2023-{datetime.date.today().year} DielDev by Diego Huh.", 
+               rx.box(
+                 f"2023-{datetime.date.today().year} ",
+                 rx.span("DielDev by Diego Huh.", color=Color.PRIMARY.value),   
+               ),
                href=const.PAGE_URL,
                is_external=True,
                font_size=Size.MEDIUM.value),
          rx.text(
-            "BUILDING SOFTWARE WITH ♥ FROM GALICIA TO THE WORLD.",
+            "BUILDING SOFTWARE WITH ♥ FROM YUCATAN TO THE WORLD.",
             font_size=Size.MEDIUM.value,
             margin_top=Size.ZERO.value
            
