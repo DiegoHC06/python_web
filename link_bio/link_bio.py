@@ -30,6 +30,9 @@ app = rx.App(
     style=styles.BASE_STYLE,
     stylesheets= styles.STYLESHEETS
 )
-app.add_page(index)
+app.add_page(index,
+             title = "Diego App",
+             description= "Creando AppWeb con nuevo Framework de python"
+             )
 app.compile()
 

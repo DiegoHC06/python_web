@@ -5,12 +5,15 @@ from link_bio.styles.styles import Size as Size
 from link_bio.styles.colors import TextColor as TextColor
 from link_bio.styles.colors import Color as Color
 from link_bio.styles.fonts import Font as Font
+import link_bio.constants as const
 import datetime
+
 def header() -> rx.Component:
     return rx.vstack(
             rx.hstack(
                 rx.avatar(name="Diego Huh", size="xl",
                             color=TextColor.BODY.value,
+                            src = "avatar.jpg",
                             bg=Color.BACKGROUND.value,
                             padding="2px",
                             border="4px",
@@ -28,10 +31,16 @@ def header() -> rx.Component:
                             font_family = Font.DEFAULT.value 
                         ), 
                 rx.hstack(
-                    link_icon("view","x.com"),   
-                    link_icon("warning","x.com"),  
-                    link_icon("warning_two","x.com"), 
-                ),    
+                    link_icon(
+                        "icons/twitch.svg",
+                        const.INSTAGRAM_URL),   
+                    link_icon(
+                        "icons/twitch.svg",
+                        const.LINKEDIN_URL),  
+                    link_icon(
+                        "icons/twitch.svg",
+                        const.TWITTER_X_URL), 
+                ),
                 align_items = "start"   
                 ),
                 spacing=Size.DEFAULT.value
@@ -39,13 +48,14 @@ def header() -> rx.Component:
         rx.flex(
             info_text(f"{experience()}+", "Experencia"),
             rx.spacer(),
-            info_text("10+","Experencia"),
+            info_text("10+","Seguidores"),
             rx.spacer(),
-            info_text("10+", "Experencia"),
+            info_text("10+", "Opciones Creadas"),
             width= "100%",color=TextColor.BODY.value
         ),
-        rx.text("""estoy creando webs con Reflex.
+        rx.text("""EStoy creando webs con Reflex.
                 Aqui podrás encontrar todos mis link ¡Bienvenid@!""",
+                font_size = Size.MEDIUM.value,
                 color=TextColor.BODY.value
         ),
         spacing=Size.BIG.value,

@@ -10,23 +10,27 @@ def links() -> rx.Component:
 
         link_button(
             "Twitch",
-            "Directos de lunes a vienes.",
+            "Directos de lunes a vienes.", 
+            "icons/twitch.svg",
             const.TWITCH_URL
         ),
         link_button(
             "Youtube",
-            "Tutoriales.",
+            "Tutoriales.", 
+            "icons/twitch.svg",
             const.YOUTUBE_URL
         ),
         link_button(
             "LinkEdin",
-            "Da el siguiente paso en tu carrera profesional y mejora tu futuro laboral hoy mismo.",
+            "Da el siguiente paso en tu carrera profesional y mejora tu futuro laboral hoy mismo.", 
+            "icons/twitch.svg",
             const.LINKEDIN_URL
         ),
         link_button(
             "X",
             "Sigueme para charlar.",
-             const.TWITTER_X_URL
+            "icons/twitch.svg",
+            const.TWITTER_X_URL
         ),
 
         title("Recursos y más"),
@@ -34,22 +38,14 @@ def links() -> rx.Component:
         link_button(
             "Pagina web",
             "Mi sitio WEB",
+            "icons/twitch.svg",
             const.PAGE_URL
         ),
         link_button(
-            "Youtube",
-            "Tutoriales.",
-            const.YOUTUBE_URL
-        ),
-        link_button(
-            "LinkEdin",
-            "Da el siguiente paso en tu carrera profesional y mejora tu futuro laboral hoy mismo.",
-            const.LINKEDIN_URL
-        ),
-        link_button(
-            "X",
-            "Sigueme para charlar.",
-             const.TWITTER_X_URL
+            "Mi blog",
+            "Nuevas lecturas.",
+            "icons/twitch.svg",
+            const.BLOG_URL
         ),
 
         title("Contacto"),
@@ -57,6 +53,7 @@ def links() -> rx.Component:
         link_button(
             "Email",
             const.EMAIL,
+            "icons/twitch.svg",
             f"mailto:{const.EMAIL}",
         ),
         spacing=Size.MEDIUM.value, 
