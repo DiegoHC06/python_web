@@ -23,7 +23,7 @@ def links() -> rx.Component:
         link_button(
             "LinkEdin",
             "Da el siguiente paso en tu carrera profesional y mejora tu futuro laboral hoy mismo.", 
-            "icons/twitch.svg",
+            "icons/linkedin.svg",
             const.LINKEDIN_URL
         ),
         link_button(
@@ -44,7 +44,7 @@ def links() -> rx.Component:
         link_button(
             "Mi blog",
             "Nuevas lecturas.",
-            "icons/twitch.svg",
+            "icons/github.svg",
             const.BLOG_URL
         ),
 

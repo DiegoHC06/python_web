@@ -34,6 +34,7 @@ app = rx.App(
 app.add_page(index,
              title = "Diego App",
              description= "Creando AppWeb con nuevo Framework de python"
+             
              )
 app.compile()
 
