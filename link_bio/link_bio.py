@@ -5,8 +5,8 @@ from link_bio.links.links import links
 from link_bio.components.footer import footer
 import link_bio.styles.styles as styles
 from link_bio.styles.styles import Size  as Size
-class State(rx.State):
-    pass
+# class State(rx.State):
+#     pass
 
 
 def index() -> rx.Component:
