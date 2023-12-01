@@ -1,4 +1,4 @@
-source /venv/bin/activate.fish
+source venv/bin/activate.fish
 pip install --upgrade pip
 pip install -r requirements.txt
 reflex init
