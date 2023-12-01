@@ -7,7 +7,7 @@ from link_bio.styles.colors import TextColor as TextColor
 def footer() -> rx.Component:
     return rx.vstack(
         rx.image(    
-            src="favaicon.png", width = Size.LARGE.value),
+            src="favicon.png", width = Size.LARGE.value),
         rx.link(
                rx.box(
                  f"2023-{datetime.date.today().year} ",
