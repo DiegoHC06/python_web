@@ -58,7 +58,7 @@ def header() -> rx.Component:
             info_text("10+","Seguidores"),
             width= "100%",color=TextColor.BODY.value
         ),
-        rx.text("""soy un amante apasionado del desarrollo software me encanta programar y crear soluciones, 
+        rx.text("""soy un amante apasionado del desarrollo software me encanta programar y crear soluciones, he desempeñado mi experencia en HTML, CSS, DJANGO Y MYSQL 
                 Aqui podrás encontrar todos mis link ¡Bienvenid@!""",
                 font_size = Size.MEDIUM.value,
                 color=TextColor.BODY.value
