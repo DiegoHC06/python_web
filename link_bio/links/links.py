@@ -17,20 +17,8 @@ def links() -> rx.Component:
         link_button(
             "Youtube",
             "Tutoriales.", 
-            "icons/twitch.svg",
+            "icons/youtube.svg",
             const.YOUTUBE_URL
-        ),
-        link_button(
-            "LinkEdin",
-            "Da el siguiente paso en tu carrera profesional y mejora tu futuro laboral hoy mismo.", 
-            "icons/linkedin.svg",
-            const.LINKEDIN_URL
-        ),
-        link_button(
-            "X",
-            "Sígueme para charlar.",
-            "icons/twitch.svg",
-            const.TWITTER_X_URL
         ),
 
         title("Recursos y más"),
@@ -38,13 +26,13 @@ def links() -> rx.Component:
         link_button(
             "Página web",
             "Mi sitio WEB",
-            "icons/twitch.svg",
-            const.PAGE_URL
+            "icons/DIEL3.jpeg",
+            const.PAGE_URL,
         ),
         link_button(
             "Mi blog",
             "Nuevas lecturas.",
-            "icons/github.svg",
+            "icons/blog.png",
             const.BLOG_URL
         ),
 
@@ -53,7 +41,7 @@ def links() -> rx.Component:
         link_button(
             "Email",
             const.EMAIL,
-            "icons/twitch.svg",
+            "icons/email.svg",
             f"mailto:{const.EMAIL}",
         ),
         spacing=Size.MEDIUM.value, 

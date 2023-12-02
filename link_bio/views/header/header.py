@@ -32,14 +32,21 @@ def header() -> rx.Component:
                         ), 
                 rx.hstack(
                     link_icon(
-                        "icons/twitch.svg",
+                        "icons/github.svg",
+                        const.GITHUB_URL),
+                    link_icon(
+                        "icons/instagram.svg",
                         const.INSTAGRAM_URL),   
                     link_icon(
-                        "icons/twitch.svg",
+                        "icons/linkedin.svg",
                         const.LINKEDIN_URL),  
                     link_icon(
-                        "icons/twitch.svg",
-                        const.TWITTER_X_URL), 
+                        "icons/x-twitter.svg",
+                        const.TWITTER_X_URL),
+                    link_icon(
+                        "icons/web.svg",
+                        const.AMAZONMUSIC_URL),
+                    font_size = Size.SMALL.value
                 ),
                 align_items = "start"   
                 ),
@@ -49,11 +56,9 @@ def header() -> rx.Component:
             info_text(f"{experience()}+", "Experencia"),
             rx.spacer(),
             info_text("10+","Seguidores"),
-            rx.spacer(),
-            info_text("10+", "Opciones Creadas"),
             width= "100%",color=TextColor.BODY.value
         ),
-        rx.text("""EStoy creando webs con Reflex.
+        rx.text("""soy un amante apasionado del desarrollo software me encanta programar y crear soluciones, 
                 Aqui podrás encontrar todos mis link ¡Bienvenid@!""",
                 font_size = Size.MEDIUM.value,
                 color=TextColor.BODY.value
