@@ -1,6 +1,7 @@
 import reflex as rx
 from link_bio.styles.styles import Size as Size
 import link_bio.styles.styles as styles
+from link_bio.styles.colors import Color
 
 def link_button(title: str,body: str, imagen: str, url: str) -> rx.Component:
     return rx.link(
@@ -18,7 +19,8 @@ def link_button(title: str,body: str, imagen: str, url: str) -> rx.Component:
                 align_items = "start",   
                 spacing=Size.ZERO.value,
                 padding_y=Size.SMALL.value
-                )
+                ),
+                width="100%"
             )
         ),
         href=url, 

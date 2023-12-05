@@ -28,20 +28,20 @@ BASE_STYLE = {
     rx.Button: {
         "width": "100%",
         "height": "100%",
-        "display": "block",
         "padding": Size.SMALL.value,
-        "boder_radius": Size.DEFAULT.value,
-        "color" : TextColor.BODY.value,
-        "background_color" : Color.CONTENT.value,
-        "_hover":{
-            "background_color" : Color.SECONDARY.value
-
-        }
+        "border_radius": Size.DEFAULT.value,
+        "color": TextColor.BODY.value,
+        "background_color": Color.CONTENT.value,
+        "white_space":"normal",
+        "text_align":"start",   
+        "_hover": {
+            "background_color": Color.SECONDARY.value, 
+            "color": TextColor.BODY.value },
    
     },
     rx.Link: {
-        "text_decoration" :"none",
-        "_hover":{} 
+        "text_decoration": "none",
+        "_hover": {},
     }
 }
 navbar_title_style = dict(
