@@ -2,7 +2,7 @@
 
 GITHUB_URL = "https://github.com/DiegoHC06"
 TWITTER_X_URL = "https://www.twitter.com/@dielhc06"
-INSTAGRAM_URL = "https://www.instagram.com/"
+INSTAGRAM_URL = "https://www.instagram.com/diego_hc06"
 LINKEDIN_URL = "https://www.linkedin.com/feed/"
 
 

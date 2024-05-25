@@ -10,11 +10,11 @@ from link_bio.styles.styles import Size  as Size
 
 
 def index() -> rx.Component:
-    return rx.box(
+    return rx.chakra.box(
         rx.script("document.documentElement.lang='es'"),
         navbar(),
-        rx.center(
-            rx.vstack(
+        rx.chakra.center(
+            rx.chakra.vstack(
                 header(),
                 links(),
                 max_width = styles.MAX_WIDTH,
@@ -35,6 +35,4 @@ app.add_page(index,
              title = "Diego App",
              description= "Creando AppWeb con nuevo Framework de python"
              
-             )
-app.compile()
-
+             ) 

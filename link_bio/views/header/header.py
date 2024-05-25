@@ -9,9 +9,9 @@ import link_bio.constants as const
 import datetime
 
 def header() -> rx.Component:
-    return rx.vstack(
-            rx.hstack(
-                rx.avatar(name="Diego Huh", size="xl",
+    return rx.chakra.vstack(
+            rx.chakra.hstack(
+                rx.chakra.avatar(name="Diego Huh", size="xl",
                             color=TextColor.BODY.value,
                             src = "avatar.jpg",
                             bg=Color.BACKGROUND.value,
@@ -19,18 +19,18 @@ def header() -> rx.Component:
                             border="4px",
                             border_color=Color.PRIMARY.value  
                           ),
-                rx.vstack(
-                        rx.heading(
+                rx.chakra.vstack(
+                        rx.chakra.heading(
                             "DIEGO HUH COB", 
                             size = "lg",                         
                         ), 
-                        rx.text(
+                        rx.chakra.text(
                             "@diegohc",
                             margin_top = Size.ZERO.value,  
                             color=TextColor.BODY.value,
                             font_family = Font.DEFAULT.value 
                         ), 
-                rx.hstack(
+                rx.chakra.hstack(
                     link_icon(
                         "icons/github.svg",
                         const.GITHUB_URL),
@@ -52,13 +52,13 @@ def header() -> rx.Component:
                 ),
                 spacing=Size.DEFAULT.value
             ),
-        rx.flex(
+        rx.chakra.flex(
             info_text(f"{experience()}+", "Experencia"),
-            rx.spacer(),
+            rx.chakra.spacer(),
             info_text("10+","Seguidores"),
             width= "100%",color=TextColor.BODY.value
         ),
-        rx.text("""soy un amante apasionado del desarrollo software me encanta programar y crear soluciones, he desempeñado mi experencia en HTML, CSS, DJANGO Y MYSQL 
+        rx.chakra.text("""soy un amante apasionado del desarrollo software me encanta programar y crear soluciones, he desempeñado mi experencia en HTML, CSS, DJANGO Y MYSQL 
                 Aqui podrás encontrar todos mis link ¡Bienvenid@!""",
                 font_size = Size.MEDIUM.value,
                 color=TextColor.BODY.value

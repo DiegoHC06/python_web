@@ -5,7 +5,7 @@ from link_bio.styles.styles import Size as Size
 import link_bio.constants as const
 
 def links() -> rx.Component:
-    return rx.vstack(
+    return rx.chakra.vstack(
         title("Comunidad"),
 
         link_button(

@@ -21,11 +21,11 @@ class Size(Enum):
 
 BASE_STYLE = {
     "background_color" : Color.BACKGROUND.value,
-    rx.Heading: {
+    rx.chakra.Heading: {
      "color": TextColor.HEADER.value,
       "font_family": Font.TITLE.value 
     },
-    rx.Button: {
+    rx.chakra.Button: {
         "width": "100%",
         "height": "100%",
         "padding": Size.SMALL.value,
@@ -39,7 +39,7 @@ BASE_STYLE = {
             "color": TextColor.BODY.value },
    
     },
-    rx.Link: {
+    rx.chakra.Link: {
         "text_decoration": "none",
         "_hover": {},
     }

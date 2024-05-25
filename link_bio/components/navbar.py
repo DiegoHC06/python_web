@@ -3,10 +3,10 @@ import link_bio.styles.styles as styles
 from link_bio.styles.styles import Size  as Size
 from link_bio.styles.colors import Color as Color
 def navbar() -> rx.Component:
-    return rx.hstack(
-        rx.box(
-            rx.span("diego", color=Color.PRIMARY.value),
-            rx.span("dev", color=Color.SECONDARY.value),
+    return rx.chakra.hstack(
+        rx.chakra.box(
+            rx.chakra.span("diego", color=Color.PRIMARY.value),
+            rx.chakra.span("dev", color=Color.SECONDARY.value),
             style=styles.navbar_title_style
             
         ),
